@@ -23,7 +23,8 @@ const evenGame = () => {
     } else {
       const oppositeAnswer = answerUser === 'yes' ? 'no' : 'yes';
       const errorMessage = `'${answerUser}' is wrong answer ;(. Correct answer was '${oppositeAnswer}'.\nLet's try again, ${userName}!`;
-      return console.log(errorMessage);
+      console.log(errorMessage);
+      return;
     }
   }
 
