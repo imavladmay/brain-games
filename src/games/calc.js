@@ -10,14 +10,16 @@ const calcGame = () => {
 
   const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-  const arithmeticOperators = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * arithmeticOperators.length);
-  const randomOperator = arithmeticOperators[randomIndex];
-
   for (let i = 0; i < 3; i += 1) {
+    const arithmeticOperators = ['+', '-', '*'];
+    const randomIndex = Math.floor(Math.random() * arithmeticOperators.length);
+    const randomOperator = arithmeticOperators[randomIndex];
+
     const firstNumber = getRandomInt(100);
     const secondNumber = getRandomInt(100);
+
     let expressionValue = 0;
+
     console.log('Question:', firstNumber, randomOperator, secondNumber);
     switch (randomOperator) {
       case '+':
