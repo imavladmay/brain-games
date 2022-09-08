@@ -34,8 +34,9 @@ const calcGame = () => {
     }
 
     const answerUser = readlineSync.question('Your answer: ');
+    const conversionToNumber = Number(answerUser);
 
-    if (answerUser === expressionValue) {
+    if (conversionToNumber === expressionValue) {
       console.log('Correct!');
     } else {
       const errorMessage = `'${answerUser}' is wrong answer ;(. Correct answer was '${expressionValue}'.\nLet's try again, ${userName}!`;
