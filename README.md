@@ -3,7 +3,7 @@
 ### Code Climate Maintainability Badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/72af2301899e317ba32a/maintainability)](https://codeclimate.com/github/thevladmay/frontend-project-44/maintainability)
 
-###                       Установка игры "Игры разума" на ваш компьютер
+### Установка игры "Игры разума" на ваш компьютер
 
 *Для корректной работы игры на вашу ОС должна быть глобально установленна Node.js*
 
@@ -26,7 +26,38 @@
 
 *Все команды (названия режимов) вводятся в терминале, при этом вы можете находиться в любой директории*
 
-#####                       Установка и тестовый запуск игры
+### Установка и тестовый запуск игры
 
 [![asciicast](https://asciinema.org/a/pVfs7f3mpaBarnpztPlKvsyh5.svg)](https://asciinema.org/a/pVfs7f3mpaBarnpztPlKvsyh5)
 
+### Победа пользователя (brain-even)
+
+[![asciicast](https://asciinema.org/a/oA1kZGrT2NP7WXkICeV2CA5M3.svg)](https://asciinema.org/a/oA1kZGrT2NP7WXkICeV2CA5M3)
+
+### Поражение пользователя (brain-even)
+
+[![asciicast](https://asciinema.org/a/dyHGER7oqz0uFYYlbrAsr9BHp.svg)](https://asciinema.org/a/dyHGER7oqz0uFYYlbrAsr9BHp)
+
+### Победа пользователя (brain-calc)
+
+[![asciicast](https://asciinema.org/a/lpLhHeblO0oLTPVwucwLzNj7k.svg)](https://asciinema.org/a/lpLhHeblO0oLTPVwucwLzNj7k)
+
+### Поражение пользователя (brain-calc)
+
+[![asciicast](https://asciinema.org/a/tTCbkeVtjArBfD3D9x2nnQz5G.svg)](https://asciinema.org/a/tTCbkeVtjArBfD3D9x2nnQz5G)
+
+### Победа пользователя (brain-gcd)
+
+[![asciicast](https://asciinema.org/a/OK1RNgn0EsYKqzLj9I3SZv449.svg)](https://asciinema.org/a/OK1RNgn0EsYKqzLj9I3SZv449)
+
+### Поражение пользователя (brain-gcd)
+
+[![asciicast](https://asciinema.org/a/e9cBxhg58XmgAMqdU44Sx9cD1.svg)](https://asciinema.org/a/e9cBxhg58XmgAMqdU44Sx9cD1)
+
+### Победа пользователя (brain-progression)
+
+[![asciicast](https://asciinema.org/a/6Z3y1Wog9Qst5XnHuSLCUpyfg.svg)](https://asciinema.org/a/6Z3y1Wog9Qst5XnHuSLCUpyfg)
+
+### Поражение пользователя (brain-progression)
+
+[![asciicast](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs.svg)](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs)
