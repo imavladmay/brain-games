@@ -61,3 +61,11 @@
 ### Поражение пользователя (brain-progression)
 
 [![asciicast](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs.svg)](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs)
+
+### Победа пользователя (brain-prime)
+
+[![asciicast](https://asciinema.org/a/7BSZy7EbnlG4ZN5f2YCg91IOr.svg)](https://asciinema.org/a/7BSZy7EbnlG4ZN5f2YCg91IOr)
+
+### Поражение пользователя (brain-prime)
+
+[![asciicast](https://asciinema.org/a/h2qjlPnikjW27M89pkzTGTBxJ.svg)](https://asciinema.org/a/h2qjlPnikjW27M89pkzTGTBxJ)
