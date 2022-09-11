@@ -1,53 +1,40 @@
-import readlineSync from 'readline-sync';
+import getRandomNumber from '../random.js';
+import { runEngineGame, roundsCount } from '../index.js';
 
-const calcGame = () => {
-  console.log('Welcome to the Brain Games!');
+const gameDescription = 'What is the result of the expression?';
 
-  const userName = readlineSync.question('May I have your name? ');
-
-  console.log(`Hello, ${userName}!`);
-  console.log('What is the result of the expression?');
-
-  const getRandomInt = (max) => Math.floor(Math.random() * max);
-
-  for (let i = 0; i < 3; i += 1) {
-    const arithmeticOperators = ['+', '-', '*'];
-    const randomIndex = Math.floor(Math.random() * arithmeticOperators.length);
-    const randomOperator = arithmeticOperators[randomIndex];
-
-    const firstNumber = getRandomInt(100);
-    const secondNumber = getRandomInt(100);
-
-    let expressionValue = 0;
-
-    console.log('Question:', firstNumber, randomOperator, secondNumber);
-    switch (randomOperator) {
-      case '+':
-        expressionValue = firstNumber + secondNumber;
-        break;
-      case '-':
-        expressionValue = firstNumber - secondNumber;
-        break;
-      case '*':
-        expressionValue = firstNumber * secondNumber;
-        break;
-      default:
-        throw new Error(`Unknown order state, this arithmetic operation is absent: ${randomOperator}!`);
-    }
-
-    const answerUser = readlineSync.question('Your answer: ');
-    const conversionToNumber = Number(answerUser);
-
-    if (conversionToNumber === expressionValue) {
-      console.log('Correct!');
-    } else {
-      const errorMessage = `'${answerUser}' is wrong answer ;(. Correct answer was '${expressionValue}'.\nLet's try again, ${userName}!`;
-      console.log(errorMessage);
-      return;
-    }
+const calculateValue = (firstNumber, randomOperator, secondNumber) => {
+  switch (randomOperator) {
+    case '+':
+      return firstNumber + secondNumber;
+    case '-':
+      return firstNumber - secondNumber;
+    case '*':
+      return firstNumber * secondNumber;
+    default:
+      throw new Error(`Unknown arithmetic operator "${randomOperator}"!`);
   }
-
-  console.log(`Congratulations, ${userName}!`);
 };
 
-export default calcGame;
+const generateRounds = () => {
+  const rounds = [];
+  const arithmeticOperators = ['+', '-', '*'];
+  for (let i = 0; i < roundsCount; i += 1) {
+    const firstNumber = getRandomNumber(1, 100);
+    const secondNumber = getRandomNumber(1, 100);
+    const randomOperator = arithmeticOperators[getRandomNumber(0, 3)];
+    const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
+    const correctAnswer = calculateValue(firstNumber, randomOperator, secondNumber).toString();
+    const round = [question, correctAnswer];
+    rounds.push(round);
+  }
+
+  return rounds;
+};
+
+const runCalcGame = () => {
+  const gameResults = generateRounds();
+  return runEngineGame(gameDescription, gameResults);
+};
+
+export default runCalcGame;

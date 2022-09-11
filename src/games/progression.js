@@ -1,47 +1,38 @@
-import readlineSync from 'readline-sync';
+import getRandomNumber from '../random.js';
+import { runEngineGame, roundsCount } from '../index.js';
 
-const progressionGame = () => {
-  console.log('Welcome to the Brain Games!');
+const gameDescription = 'What number is missing in the progression?';
+const progressionLength = 10;
 
-  const userName = readlineSync.question('May I have your name? ');
-
-  console.log(`Hello, ${userName}!`);
-  console.log('What number is missing in the progression?');
-
-  const getRandomInt = (max) => Math.floor(Math.random() * max);
-
-  const getArithmeticProgression = (firstNumber, progressionStep, progressionLength) => {
-    const progression = [];
-    for (let i = 0; i < progressionLength; i += 1) {
-      progression.push(firstNumber + i * progressionStep);
-    }
-
-    return progression;
-  };
-
-  for (let i = 0; i < 3; i += 1) {
-    const firstNumber = getRandomInt(100);
-    const progressionStep = getRandomInt(10);
-    const progressionLength = 10;
-    const progression = getArithmeticProgression(firstNumber, progressionStep, progressionLength);
-    const hiddenElemetIndex = getRandomInt(progression.length - 1);
-    const correctAnswer = progression[hiddenElemetIndex];
-    progression[hiddenElemetIndex] = '..';
-    const question = progression.join(' ');
-
-    console.log('Question:', question);
-    const userAnswer = readlineSync.question('Your answer: ');
-    const conversionToNumber = Number(userAnswer);
-
-    if (correctAnswer === conversionToNumber) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
-      return;
-    }
+const getArithmeticProgression = (firstNumber, progressionStep, length) => {
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(firstNumber + i * length);
   }
 
-  console.log(`Congratulations, ${userName}!`);
+  return progression;
 };
 
-export default progressionGame;
+const generateRounds = () => {
+  const rounds = [];
+  for (let i = 0; i < roundsCount; i += 1) {
+    const firstNumber = getRandomNumber(1, 100);
+    const progressionStep = getRandomNumber(1, 10);
+    const progression = getArithmeticProgression(firstNumber, progressionStep, progressionLength);
+    const hiddenElementIndex = getRandomNumber(0, progression.length);
+    const correctAnswer = progression[hiddenElementIndex].toString();
+    progression[hiddenElementIndex] = '..';
+    const question = progression.join(' ');
+    const round = [question, correctAnswer];
+    rounds.push(round);
+  }
+
+  return rounds;
+};
+
+const runProgressionGame = () => {
+  const gameResults = generateRounds();
+  return runEngineGame(gameDescription, gameResults);
+};
+
+export default runProgressionGame;
