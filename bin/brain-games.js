@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import userGreeting from '../src/games/games.js';
+import runUserGreeting from '../src/games/cli.js';
 
-userGreeting();
+runUserGreeting();
