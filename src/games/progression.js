@@ -3,6 +3,10 @@ import runEngineGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
+const minNumber = 0;
+const maxNumber = 100;
+const minNumberForStep = 1;
+const maxNumberForStep = 50;
 
 const getProgression = (firstNumber, progressionStep, length) => {
   const progression = [];
@@ -14,10 +18,10 @@ const getProgression = (firstNumber, progressionStep, length) => {
 };
 
 const generateRound = () => {
-  const firstMemberOfProgression = getRandomNumber(1, 100);
-  const progressionStep = getRandomNumber(1, 50);
-  const progression = getProgression(firstMemberOfProgression, progressionStep, progressionLength);
-  const hiddenElementIndex = getRandomNumber(0, progression.length);
+  const firstNumber = getRandomNumber(minNumber, maxNumber);
+  const progressionStep = getRandomNumber(minNumberForStep, maxNumberForStep);
+  const progression = getProgression(firstNumber, progressionStep, progressionLength);
+  const hiddenElementIndex = getRandomNumber(minNumber, progression.length);
   const correctAnswer = progression[hiddenElementIndex].toString();
   progression[hiddenElementIndex] = '..';
   const question = progression.join(' ');
