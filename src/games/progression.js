@@ -4,7 +4,7 @@ import runEngineGame from '../index.js';
 const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-const getArithmeticProgression = (firstNumber, progressionStep, length) => {
+const getProgression = (firstNumber, progressionStep, length) => {
   const progression = [];
   for (let i = 0; i < length; i += 1) {
     progression.push(firstNumber + i * progressionStep);
@@ -13,10 +13,10 @@ const getArithmeticProgression = (firstNumber, progressionStep, length) => {
   return progression;
 };
 
-const generateRounds = () => {
-  const firstNumber = getRandomNumber(1, 100);
+const generateRound = () => {
+  const firstMemberOfProgression = getRandomNumber(1, 100);
   const progressionStep = getRandomNumber(1, 50);
-  const progression = getArithmeticProgression(firstNumber, progressionStep, progressionLength);
+  const progression = getProgression(firstMemberOfProgression, progressionStep, progressionLength);
   const hiddenElementIndex = getRandomNumber(0, progression.length);
   const correctAnswer = progression[hiddenElementIndex].toString();
   progression[hiddenElementIndex] = '..';
@@ -24,6 +24,6 @@ const generateRounds = () => {
   return [question, correctAnswer];
 };
 
-const runProgressionGame = () => runEngineGame(gameDescription, generateRounds);
+const runProgressionGame = () => runEngineGame(gameDescription, generateRound);
 
 export default runProgressionGame;

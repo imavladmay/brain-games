@@ -3,8 +3,8 @@ import runEngineGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const calculateValue = (firstNumber, randomOperator, secondNumber) => {
-  switch (randomOperator) {
+const calculateValue = (firstNumber, operator, secondNumber) => {
+  switch (operator) {
     case '+':
       return firstNumber + secondNumber;
     case '-':
@@ -12,20 +12,20 @@ const calculateValue = (firstNumber, randomOperator, secondNumber) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      throw new Error(`Unknown arithmetic operator "${randomOperator}"!`);
+      throw new Error(`Unknown arithmetic operator "${operator}"!`);
   }
 };
 
-const generateRounds = () => {
+const generateRound = () => {
   const arithmeticOperators = ['+', '-', '*'];
-  const firstNumber = getRandomNumber(1, 100);
-  const secondNumber = getRandomNumber(1, 100);
-  const randomOperator = arithmeticOperators[getRandomNumber(0, 3)];
-  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
-  const correctAnswer = calculateValue(firstNumber, randomOperator, secondNumber).toString();
+  const leftOperand = getRandomNumber(1, 100);
+  const rightOperand = getRandomNumber(1, 100);
+  const expressionOperator = arithmeticOperators[getRandomNumber(0, 3)];
+  const question = `${leftOperand} ${expressionOperator} ${rightOperand}`;
+  const correctAnswer = calculateValue(leftOperand, expressionOperator, rightOperand).toString();
   return [question, correctAnswer];
 };
 
-const runCalcGame = () => runEngineGame(gameDescription, generateRounds);
+const runCalcGame = () => runEngineGame(gameDescription, generateRound);
 
 export default runCalcGame;

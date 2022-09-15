@@ -11,14 +11,14 @@ const getGCD = (firstNumber, secondNumber) => {
   return getGCD(secondNumber, firstNumber % secondNumber);
 };
 
-const generateRounds = () => {
-  const firstNumber = getRandomNumber(1, 100);
-  const secondNumber = getRandomNumber(1, 100);
-  const question = `${firstNumber} ${secondNumber}`;
-  const correctAnswer = getGCD(firstNumber, secondNumber).toString();
+const generateRound = () => {
+  const firstNumberOfQuestion = getRandomNumber(1, 100);
+  const secondNumberOfQuestion = getRandomNumber(1, 100);
+  const question = `${firstNumberOfQuestion} ${secondNumberOfQuestion}`;
+  const correctAnswer = getGCD(firstNumberOfQuestion, secondNumberOfQuestion).toString();
   return [question, correctAnswer];
 };
 
-const runGCDGame = () => runEngineGame(gameDescription, generateRounds);
+const runGCDGame = () => runEngineGame(gameDescription, generateRound);
 
 export default runGCDGame;

@@ -17,12 +17,13 @@ const isPrime = (number) => {
   return true;
 };
 
-const generateRounds = () => {
-  const question = getRandomNumber(1, 100);
+const generateRound = () => {
+  const numberForQuestion = getRandomNumber(1, 100);
+  const question = numberForQuestion;
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const runPrimeGame = () => runEngineGame(gameDescription, generateRounds);
+const runPrimeGame = () => runEngineGame(gameDescription, generateRound);
 
 export default runPrimeGame;
