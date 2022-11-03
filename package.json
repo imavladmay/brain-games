@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "«Brain Games» — is a set of five console games built around popular mobile brain-pumping apps.",
+  "description": "«Brain-Games» — is a set of five console games built around popular mobile brain-pumping apps.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/thevladmay/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Vladislav Mayakin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thevladmay/frontend-project-44/issues"
