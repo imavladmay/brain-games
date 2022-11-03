@@ -1,70 +1,70 @@
-### Hexlet tests and linter status:
+### Tests and linter status:
 [![Actions Status](https://github.com/thevladmay/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/thevladmay/frontend-project-44/actions)
-### Code Climate Maintainability Badge
+### CodeClimate Maintainability badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/84d188118682fb688e6c/maintainability)](https://codeclimate.com/github/imavladmay/Brain-Games/maintainability)
 
-### Установка игры "Игры разума" на ваш компьютер
+### Installing the game on your computer
 
-*Для корректной работы игры на вашу ОС должна быть глобально установленна Node.js v18.8.0*
+*The game must have Node.js v18.8.0 globally installed on your OS for it to work correctly*
 
-##### Порядок установки:
-1. Запустите терминал и склонируйте репозиторий в вашу домашнюю директорию
+##### Installation steps:
+1. Launch the terminal and clone the repository into your home directory
 ```git clone git@github.com:imavladmay/Brain-Games.git```
-2. Зайдите в склонированный репозиторий ```cd Brain-Games```
-3. Выполните команду ```npm ci```
-4. Выполните команду ```npm link``` (в случае ошибки необходимо использовать ```sudo npm link```, после чего, ввести свой пароль для входа в систему)
+2. Go to the cloned repository ```cd Brain-Games```
+3. Run the command ```make install```
+4. Run the command ```make link```
 
-***Поздравляю!*** *игра локально установлена в вашу систему* ***:)***
+***Congratulations!*** *the game is locally installed on your system* ***:)***
 
-##### В игре присутствуют несколько режимов:
-- brain-even (Проверка на четность)
-- brain-calc (Калькулятор)
-- brain-gcd (Наибольший Общий Делитель)
-- brain-progression (Арифметическая прогрессия)
-- brain-prime (Простое ли число?)
+##### There are several modes in the game:
+- brain-even (Parity check)
+- brain-calc (Calculator)
+- brain-gcd (The greatest common divisor)
+- brain-progression (Arithmetic progression)
+- brain-prime (Is it a prime number?)
 
-*Все команды (названия режимов) вводятся в терминале, при этом вы можете находиться в любой директории*
+*All commands (mode names) are entered in the terminal, and you can be in any directory*.
 
-### Установка и тестовый запуск игры
+### Installation and test run of the game
 
-[![asciicast](https://asciinema.org/a/pVfs7f3mpaBarnpztPlKvsyh5.svg)](https://asciinema.org/a/pVfs7f3mpaBarnpztPlKvsyh5)
+[![asciicast](https://asciinema.org/a/enggws19enPhfsxm3SLmM85tC.svg)](https://asciinema.org/a/enggws19enPhfsxm3SLmM85tC)
 
-### Победа пользователя (brain-even)
+### User victory (brain-even)
 
-[![asciicast](https://asciinema.org/a/oA1kZGrT2NP7WXkICeV2CA5M3.svg)](https://asciinema.org/a/oA1kZGrT2NP7WXkICeV2CA5M3)
+[![asciicast](https://asciinema.org/a/Eyt6mrxa8FGzng4PLwstQk1kh.svg)](https://asciinema.org/a/Eyt6mrxa8FGzng4PLwstQk1kh)
 
-### Поражение пользователя (brain-even)
+### User defeat (brain-even)
 
-[![asciicast](https://asciinema.org/a/dyHGER7oqz0uFYYlbrAsr9BHp.svg)](https://asciinema.org/a/dyHGER7oqz0uFYYlbrAsr9BHp)
+[![asciicast](https://asciinema.org/a/eYNtZfy9DaADAQXD7huzstDEH.svg)](https://asciinema.org/a/eYNtZfy9DaADAQXD7huzstDEH)
 
-### Победа пользователя (brain-calc)
+### User victory (brain-calc)
 
-[![asciicast](https://asciinema.org/a/lpLhHeblO0oLTPVwucwLzNj7k.svg)](https://asciinema.org/a/lpLhHeblO0oLTPVwucwLzNj7k)
+[![asciicast](https://asciinema.org/a/S8mV9sjoGfclyBqnOS6ZDNxPv.svg)](https://asciinema.org/a/S8mV9sjoGfclyBqnOS6ZDNxPv)
 
-### Поражение пользователя (brain-calc)
+### User defeat (brain-calc)
 
-[![asciicast](https://asciinema.org/a/tTCbkeVtjArBfD3D9x2nnQz5G.svg)](https://asciinema.org/a/tTCbkeVtjArBfD3D9x2nnQz5G)
+[![asciicast](https://asciinema.org/a/hOtAGyglfhqZJot450Q8Diemi.svg)](https://asciinema.org/a/hOtAGyglfhqZJot450Q8Diemi)
 
-### Победа пользователя (brain-gcd)
+### User victory (brain-gcd)
 
-[![asciicast](https://asciinema.org/a/OK1RNgn0EsYKqzLj9I3SZv449.svg)](https://asciinema.org/a/OK1RNgn0EsYKqzLj9I3SZv449)
+[![asciicast](https://asciinema.org/a/K6u7njfyK6H0fk2bifnJlNyKk.svg)](https://asciinema.org/a/K6u7njfyK6H0fk2bifnJlNyKk)
 
-### Поражение пользователя (brain-gcd)
+### User defeat (brain-gcd)
 
-[![asciicast](https://asciinema.org/a/e9cBxhg58XmgAMqdU44Sx9cD1.svg)](https://asciinema.org/a/e9cBxhg58XmgAMqdU44Sx9cD1)
+[![asciicast](https://asciinema.org/a/98YutigPyISbgN4CnlKzlqgUK.svg)](https://asciinema.org/a/98YutigPyISbgN4CnlKzlqgUK)
 
-### Победа пользователя (brain-progression)
+### User victory (brain-progression)
 
-[![asciicast](https://asciinema.org/a/6Z3y1Wog9Qst5XnHuSLCUpyfg.svg)](https://asciinema.org/a/6Z3y1Wog9Qst5XnHuSLCUpyfg)
+[![asciicast](https://asciinema.org/a/BAtihxSphkLJUkQ8LskViV2wQ.svg)](https://asciinema.org/a/BAtihxSphkLJUkQ8LskViV2wQ)
 
-### Поражение пользователя (brain-progression)
+### User defeat (brain-progression)
 
-[![asciicast](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs.svg)](https://asciinema.org/a/S6EaHm6lXwr71y6aRuJtJtyCs)
+[![asciicast](https://asciinema.org/a/Vt6EHSMhtLsBJirNbwuqHQUj8.svg)](https://asciinema.org/a/Vt6EHSMhtLsBJirNbwuqHQUj8)
 
-### Победа пользователя (brain-prime)
+### User victory (brain-prime)
 
-[![asciicast](https://asciinema.org/a/7BSZy7EbnlG4ZN5f2YCg91IOr.svg)](https://asciinema.org/a/7BSZy7EbnlG4ZN5f2YCg91IOr)
+[![asciicast](https://asciinema.org/a/gyfVPE2ZZvdVC2oiEKqoNaA6J.svg)](https://asciinema.org/a/gyfVPE2ZZvdVC2oiEKqoNaA6J)
 
-### Поражение пользователя (brain-prime)
+### User defeat (brain-prime)
 
-[![asciicast](https://asciinema.org/a/h2qjlPnikjW27M89pkzTGTBxJ.svg)](https://asciinema.org/a/h2qjlPnikjW27M89pkzTGTBxJ)
+[![asciicast](https://asciinema.org/a/7pkcox1QNLTEIdGzVNN9ikWCT.svg)](https://asciinema.org/a/7pkcox1QNLTEIdGzVNN9ikWCT)
