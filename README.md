@@ -1,6 +1,6 @@
 ### Tests and linter status:
 [![Actions Status](https://github.com/thevladmay/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/thevladmay/frontend-project-44/actions)
-### CodeClimate Maintainability badge
+### CodeClimate Maintainability badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/84d188118682fb688e6c/maintainability)](https://codeclimate.com/github/imavladmay/Brain-Games/maintainability)
 
 ### Installing the game on your computer
