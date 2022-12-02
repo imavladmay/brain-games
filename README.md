@@ -12,7 +12,7 @@
 ```git clone git@github.com:imavladmay/Brain-Games.git```
 2. Go to the cloned repository ```cd Brain-Games```
 3. Run the command ```make install```
-4. Run the command ```make link```(If an error occurs, use sudo)
+4. Run the command ```make link``` (If an error occurs, use sudo)
 
 ***Congratulations!*** *the game is locally installed on your system* ***:)***
 
