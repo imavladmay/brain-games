@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "«Brain-Games» — is a set of five console games built around popular mobile brain-pumping apps.",
+  "description": "«Brain games» — is a set of five console games built around popular mobile brain-pumping apps.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
